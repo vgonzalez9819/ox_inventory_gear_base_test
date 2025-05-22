@@ -1,0 +1,45 @@
+:root {
+    --bg: #1a1a1a;
+    --text: #fff;
+    --border: #3e8ed0;
+    --highlight: #00ff00;
+    --font: Arial, sans-serif;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: var(--font);
+    color: var(--text);
+}
+#gearPanel {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: var(--bg);
+    border: 2px solid var(--border);
+    padding: 10px;
+    display: none;
+}
+#gearPanel.visible { display: block; }
+#slots {
+    display: grid;
+    grid-template-columns: repeat(2, 80px);
+    grid-gap: 6px;
+}
+.slot {
+    width: 80px;
+    height: 80px;
+    border: 1px solid var(--border);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.slot.glow {
+    animation: glow 0.3s ease-out;
+}
+@keyframes glow {
+    from { box-shadow: 0 0 10px var(--highlight); }
+    to { box-shadow: none; }
+}
+.hidden { display: none; }
