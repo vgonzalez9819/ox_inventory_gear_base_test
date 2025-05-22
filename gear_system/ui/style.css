@@ -1,0 +1,58 @@
+#gear-toggle {
+    position: absolute;
+    display: none;
+    cursor: pointer;
+    font-size: 24px;
+}
+
+body {
+    margin: 0;
+    font-family: var(--font, Arial);
+}
+#gear-panel {
+    position: absolute;
+    background: var(--bg, rgba(30,30,30,0.9));
+    padding: 10px;
+    width: 200px;
+    color: var(--text, #fff);
+    border: 1px solid var(--border, #3e8ed0);
+    display: none;
+}
+#gear-panel.show {
+    display: block;
+}
+#gear-toggle.show {
+    display: block;
+}
+#close {
+    cursor: pointer;
+    text-align: right;
+}
+.slot {
+    border: 1px solid var(--border, #555);
+    padding: 5px;
+    margin: 5px 0;
+    background: #222;
+    min-height: 30px;
+}
+.slot.dragover {
+    background: #444;
+}
+
+#stat-preview {
+    position: absolute;
+    background: rgba(0,0,0,0.8);
+    color: #fff;
+    padding: 4px 6px;
+    font-size: 12px;
+    display: none;
+    pointer-events: none;
+    z-index: 1000;
+}
+.item {
+    background: #555;
+    margin: 2px;
+    padding: 2px 4px;
+    cursor: move;
+    color: var(--text, #fff);
+}
