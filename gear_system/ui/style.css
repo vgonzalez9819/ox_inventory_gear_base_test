@@ -1,0 +1,35 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+#gear-panel {
+    position: absolute;
+    background: rgba(30, 30, 30, 0.9);
+    padding: 10px;
+    width: 200px;
+    color: #fff;
+    display: none;
+}
+#gear-panel.show {
+    display: block;
+}
+#close {
+    cursor: pointer;
+    text-align: right;
+}
+.slot {
+    border: 1px solid #555;
+    padding: 5px;
+    margin: 5px 0;
+    background: #222;
+    min-height: 30px;
+}
+.slot.dragover {
+    background: #444;
+}
+.item {
+    background: #555;
+    margin: 2px;
+    padding: 2px 4px;
+    cursor: move;
+}
