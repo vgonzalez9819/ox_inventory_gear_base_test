@@ -1,0 +1,34 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+#gear-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: var(--background, #1c1c1c);
+    color: var(--text, #fff);
+    border: 2px solid var(--border, #565656);
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#gear-container.hidden {
+    display: none;
+}
+
+.slot {
+    width: 60px;
+    height: 60px;
+    border: 1px solid var(--border, #565656);
+    margin: 2px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0,0,0,0.3);
+    color: #fff;
+}
